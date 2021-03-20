@@ -12,4 +12,18 @@
         font-family: 'Josefin';
         src: url('./assets/fonts/Josefin/JosefinSans-Light.ttf') format("truetype");
     }
+    @font-face {
+        font-family: 'Roboto';
+        src: url('./assets/fonts/Roboto/Roboto-Regular.ttf') format("truetype");
+    }
+}
+
+@layer components {
+    .close-faq {
+        @apply border py-4 px-6 rounded-md border-sixth
+        shadow;
+    }
+    .open-faq {
+        @apply border py-4 px-6 bg-sixth rounded-md;
+    }
 }

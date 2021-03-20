@@ -1,5 +1,16 @@
 <template>
   <div class="faq">
-    <h1>This is an about Faq</h1>
+    <FaqCard />
+    <FaqCard />
   </div>
 </template>
+
+<script>
+import FaqCard from '@/components/FaqCard.vue';
+
+export default {
+  components: {
+    FaqCard,
+  },
+};
+</script>
