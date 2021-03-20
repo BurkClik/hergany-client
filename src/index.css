@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Dorsa';
+        src: url('./assets/fonts/Dorsa/Dorsa-Regular.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'Josefin';
+        src: url('./assets/fonts/Josefin/JosefinSans-Light.ttf') format("truetype");
+    }
+}
