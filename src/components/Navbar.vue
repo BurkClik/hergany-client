@@ -1,10 +1,10 @@
 <template>
-  <header class="sm:flex sm:items-center sm:justify-between sm:px-24 sm:py-3">
-    <div class="flex items-center sm:justify-between justify-between px-4 py-3 sm:p-0">
-      <div class="sm:hidden">
+  <header class="md:flex md:items-center md:justify-between md:px-24 md:py-3">
+    <div class="flex items-center md:justify-between justify-between px-6 py-3 md:p-0">
+      <div class="md:hidden">
         <button @click="isOpen = !isOpen" type="button" class="block text-gray-500
         hover:text-red-500 focus:text-secondary focus:outline-none">
-          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <svg class="h-7 w-7 sm:w-9 sm:h-9 fill-current" viewBox="0 0 24 24">
             <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414
             1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1
             1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
@@ -18,11 +18,11 @@
           Hergany
         </router-link>
       </div>
-      <div class="sm:hidden"></div>
+      <div class="md:hidden"></div>
     </div>
-    <div class="sm:flex items-center">
-      <nav :class="isOpen ? 'block' : 'hidden'" class="navlink px-2 pt-2 pb-4 sm:flex sm:p-0
-      sm:pr-72 sm:space-x-20 text-center">
+    <div class="md:flex items-center">
+      <nav :class="isOpen ? 'block' : 'hidden'" class="navlink px-2 pt-2 pb-4 md:flex md:p-0
+      md:pr-72 md:space-x-20 text-center">
         <router-link to="/products" class="mt-1 block px-2 py-1 text-xl rounded
         ">
           Ürünler
@@ -36,7 +36,7 @@
           S.S.S
         </router-link>
       </nav>
-      <div :class="isOpen ? 'block' : 'hidden'" class="flex space-x-6 sm:flex justify-center">
+      <div :class="isOpen ? 'block' : 'hidden'" class="flex space-x-6 md:flex justify-center">
         <a href="#">
           <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" xml:space="preserve"><path d="M434.478 16H77.519C43.718 16 16 43.719 16 77.521v356.957C16 468.282 43.718 496 77.519 496h356.959C468.281 496 496 468.282 496 434.479V77.521C496 43.719 468.281 16 434.478 16zM327.203 230.875L324.906 256H277v160h-64V256h-32v-64h32v-29.038c0-26.212 12.524-67.166 67.461-67.166l49.539.225V151h-36.003c-5.848 0-13.997 2.812-13.997 15.284V192h50.743l-3.54 38.875z" fill-rule="evenodd" clip-rule="evenodd" fill="#1A1A1A" id="facebook__x2C__social__x2C__media_x2C__icon_x2C_"/><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description about="https://iconscout.com/legal#licenses" dc:title="facebook,social,media" dc:description="facebook,social,media" dc:publisher="Iconscout" dc:date="2018-06-25" dc:format="image/svg+xml" dc:language="en"><dc:creator><rdf:Bag><rdf:li>Ibrandify Icons</rdf:li></rdf:Bag></dc:creator></rdf:Description></rdf:RDF></metadata></svg>
         </a>
