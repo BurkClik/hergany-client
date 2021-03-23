@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-4 px-8 max-w-screen text-center">
+  <div class="pt-4 max-w-screen h-auto text-center">
     <div class="grid auto-rows-auto m-auto md:grid-cols-2 h-48 md:h-96 w-full bg-primary rounded-3xl bg-opacity-50 items-center">
       <div class="md:grid md:justify-items-end pt-2 m-auto">
         <img class="h-44 w-24 md:w-80 md:h-80 shadow-md md:place-self-end" src="../assets/images/ayi.jpg" alt="">
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'ProductCard',
+  name: 'ProductDetailCard',
 };
 </script>
 
