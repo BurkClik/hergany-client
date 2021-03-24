@@ -1,5 +1,5 @@
 <template>
-  <header class="md:flex md:items-center md:justify-between md:px-24 md:py-3">
+  <header class="md:flex md:items-center md:justify-between md:px-24 md:py-3 lg:px-36">
     <div class="flex items-center md:justify-between justify-between px-6 py-3 md:p-0">
       <div class="md:hidden">
         <button @click="isOpen = !isOpen" type="button" class="block text-gray-500
@@ -22,7 +22,7 @@
     </div>
     <div class="md:flex items-center">
       <nav :class="isOpen ? 'block' : 'hidden'" class="navlink px-2 pt-2 pb-4 md:flex md:p-0
-      md:pr-72 md:space-x-20 text-center">
+      md:pr-24 md:space-x-7 text-center 2xl:space-x-20 2xl:pr-72">
         <router-link to="/products" class="mt-1 block px-2 py-1 text-xl rounded
         ">
           Ürünler
