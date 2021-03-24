@@ -3,7 +3,7 @@ export default [
     productID: 1,
     productName: 'Matematik Seti',
     price: '144.90₺',
-    productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien senectus donec.',
+    productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien.',
     image: 'matematik.jpg',
   },
   {

@@ -11,6 +11,7 @@ module.exports = {
         fifth: '#A5A58D',
         sixth: '#DDBEA9',
         seventh: '#FDF3EC',
+        demo: '#FFF9F5',
       }
     },
   },

@@ -1,5 +1,5 @@
 <template>
-  <header class="md:justify-start sm:justify-between md:items-center md:px-24 p-4 my-4 hidden md:flex">
+  <header class="md:justify-start sm:justify-between md:items-center md:px-24 p-4 hidden md:flex bg-demo">
     <div
       class="flex items-center px-4 py-3 md:p-0"
     >

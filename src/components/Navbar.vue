@@ -1,5 +1,5 @@
 <template>
-  <header class="md:flex md:items-center md:justify-between md:px-24 md:py-3 lg:px-36">
+  <header class="md:flex md:items-center md:justify-between md:px-24 md:py-3 lg:px-48">
     <div class="flex items-center md:justify-between justify-between px-6 py-3 md:p-0">
       <div class="md:hidden">
         <button @click="isOpen = !isOpen" type="button" class="block text-gray-500

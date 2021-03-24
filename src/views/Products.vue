@@ -1,38 +1,49 @@
 <template>
   <div>
-    <div v-for="value in object" class="value" v-bind:key="value.productID">
+    <div v-for="value in object" class="value pt-4" v-bind:key="value.productID">
       <div v-if="value.productID % 2 == 1">
-        <div class="grid grid-cols-5 bg-seventh">
-          <div class="col-span-2 pl-4 py-4">
+        <div class="flex bg-demo xl:px-64">
+          <div class="flex-1 py-6">
             <img :src="require(`@/assets/images/${value.image}`)" alt=""
-            class="shadow-xl">
+            class="shadow-xl xl:w-80">
           </div>
-          <div class="col-span-3 px-4 py-4 space-y-12">
-            <div class="space-y-3">
-              <p class="josefin text-xl">{{ value.productName }}</p>
-              <p class="roboto-light text-xs">{{ value.productDetail }}</p>
+          <div class="flex-1 px-4 py-6 space-y-12 xl:space-y-52">
+            <div class="space-y-3 xl:space-y-10">
+              <p class="josefin text-xl xl:text-4xl">{{ value.productName }}</p>
+              <p class="roboto-light text-xs xl:text-2xl">{{ value.productDetail }}</p>
             </div>
             <div class="flex justify-between items-center font-light">
-              <p class="roboto-bold text-fifth">{{ value.price }}</p>
-              <button class="roboto bg-fifth text-white px-4 py-1 rounded-2xl text-sm">SATIN AL</button>
+              <p class="roboto-bold xl:text-2xl">{{ value.price }}</p>
+              <div class="space-x-8">
+                <span class="text-secondary xl:text-2xl">Trendyol'dan</span>
+                <button class="roboto bg-fifth text-white px-4 py-1 rounded-2xl text-sm xl:px-10 xl:py-1 xl:text-2xl">
+                SATIN AL
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div v-else-if="value.productID % 2 == 0">
-        <div class="grid grid-cols-5">
-          <div class="col-span-3 px-4 py-4 space-y-12">
-            <div class="space-y-3">
-              <p class="josefin text-xl font-light">{{ value.productName }}</p>
-              <p class="roboto-light text-xs">{{ value.productDetail }}</p>
+        <div class="flex xl:px-64">
+          <div class="flex-1 px-4 py-6 space-y-12 xl:space-y-52">
+            <div class="space-y-3 xl:space-y-10">
+              <p class="josefin text-xl xl:text-4xl">{{ value.productName }}</p>
+              <p class="roboto-light text-xs xl:text-2xl">{{ value.productDetail }}</p>
             </div>
             <div class="flex justify-between items-center">
-              <p class="roboto-bold text-fifth">{{ value.price }}</p>
-              <button class="roboto bg-fifth text-white px-4 py-1 rounded-2xl text-sm">SATIN AL</button>
+              <p class="roboto-bold xl:text-2xl">{{ value.price }}</p>
+              <div class="space-x-8">
+                <span class=" text-secondary xl:text-2xl">Trendyol'dan</span>
+                <button class="roboto bg-fifth text-white px-4 py-1 rounded-2xl text-sm xl:px-10 xl:py-1 xl:text-2xl">
+                  SATIN AL
+                </button>
+              </div>
             </div>
           </div>
-          <div class="col-span-2 pr-4 py-4">
-            <img :src="require(`@/assets/images/${value.image}`)" alt="">
+          <div class="flex-1 py-6">
+            <img :src="require(`@/assets/images/${value.image}`)" alt=""
+            class="shadow-xl xl:w-80 ml-auto">
           </div>
         </div>
       </div>
