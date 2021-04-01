@@ -12,7 +12,10 @@ module.exports = {
         sixth: '#DDBEA9',
         seventh: '#FDF3EC',
         demo: '#FFF9F5',
-      }
+      },
+      height: {
+        512: '512px',
+      },
     },
   },
   variants: {

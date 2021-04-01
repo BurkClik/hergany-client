@@ -25,6 +25,11 @@
         font-family: 'Roboto-Bold';
         src: url('./assets/fonts/Roboto/Roboto-Bold.ttf') format("truetype");
     }
+
+    @font-face {
+        font-family: 'Inter-Medium';
+        src: url('./assets/fonts/Inter/Inter-Medium.ttf') format("truetype");
+    }
 }
 
 @layer components {
