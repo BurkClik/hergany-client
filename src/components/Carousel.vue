@@ -1,25 +1,61 @@
 <template>
-  <div class="w-full bg-primary">
-      <div class="grid grid-cols-5 content-center px-10">
-          <div class="col-span-3 place-self-center">
-              <p class="text-xl sm:text-5xl font-bold">Lorem ipsum dolor ist amet.</p>
-              <p class="text-xs sm:text-base text-gray-500">
-                Lorem ipsum dolor is amet, consectetur adipiscing elit.
-              </p>
-          </div>
-          <div class="col-span-2">
-              <img class="sm:h-96" src="../assets/images/carousel_toy.svg" alt="">
-          </div>
-      </div>
-  </div>
+  <swiper ref='mySwiper' :options='swiperOptions'>
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <div class='swiper-pagination' slot='pagination'></div>
+  </swiper>
 </template>
 
 <script>
+import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper';
+
+// import style (>= Swiper 6.x)
+import 'swiper/swiper-bundle.css';
+
 export default {
   name: 'Carousel',
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  directives: {
+    swiper: directive,
+  },
+  data() {
+    return {
+              swiperOption: {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        // Some Swiper option/callback...
+      },
+    };
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper;
+    },
+  },
+  mounted() {
+    console.log('Current Swiper instance object', this.swiper);
+    this.swiper.slideTo(3, 1000, false);
+  },
 };
 </script>
 
 <style>
-
 </style>
