@@ -35,6 +35,16 @@
         font-family: 'Montserrat-Medium';
         src: url('./assets/fonts/Montserrat/Montserrat-Medium.ttf') format("truetype");
     }
+
+    @font-face {
+        font-family: 'Josefin-Regular';
+        src: url('./assets/fonts/Josefin/JosefinSans-Regular.ttf') format("truetype");
+    }
+
+    @font-face {
+        font-family: 'Josefin-SemiBold';
+        src: url('./assets/fonts/Josefin/JosefinSans-SemiBold.ttf') format("truetype");
+    }
 }
 
 @layer components {
