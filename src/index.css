@@ -30,6 +30,11 @@
         font-family: 'Inter-Medium';
         src: url('./assets/fonts/Inter/Inter-Medium.ttf') format("truetype");
     }
+
+    @font-face {
+        font-family: 'Montserrat-Medium';
+        src: url('./assets/fonts/Montserrat/Montserrat-Medium.ttf') format("truetype");
+    }
 }
 
 @layer components {

@@ -13,13 +13,22 @@ module.exports = {
         seventh: '#FDF3EC',
         demo: '#FFF9F5',
       },
-      height: {
-        512: '512px',
+      fontSize:{
+        '3xs': '.5rem',
+        '2xs': '.625rem',
+        '32': '2rem',
       },
+      height:{
+          420: '420px',
+          352: '352px',
+          512: '512px',
+      }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

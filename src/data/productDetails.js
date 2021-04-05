@@ -5,6 +5,7 @@ export default [
     price: '144.90₺',
     productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien.',
     image: 'matematik.jpg',
+    category: 'Oyuncaklar',
   },
   {
     productID: 2,
@@ -12,6 +13,7 @@ export default [
     price: '94.90₺',
     productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien senectus donec.',
     image: 'duvar_susu.jpg',
+    category: 'Duvar Dekorasyonu',
   },
   {
     productID: 3,
@@ -19,6 +21,7 @@ export default [
     price: '74.90₺',
     productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien senectus donec.',
     image: 'ayi.jpg',
+    category: 'Çıngıraklar',
   },
   {
     productID: 4,
@@ -26,6 +29,7 @@ export default [
     price: '144.90₺',
     productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien senectus donec.',
     image: 'matematik.jpg',
+    category: 'Oyuncaklar',
   },
   {
     productID: 5,
@@ -33,6 +37,7 @@ export default [
     price: '94.90₺',
     productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien senectus donec.',
     image: 'duvar_susu.jpg',
+    category: 'Duvar Dekorasyonu',
   },
   {
     productID: 6,
@@ -40,5 +45,6 @@ export default [
     price: '74.90₺',
     productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien senectus donec.',
     image: 'ayi.jpg',
+    category: 'Çıngıraklar',
   },
 ];
