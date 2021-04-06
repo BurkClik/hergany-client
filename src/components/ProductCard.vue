@@ -10,13 +10,15 @@
           xl:h-72
           2xl:h-80">
             <div class="col-span-2 flex justify-end pr-3 sm:pr-10 sm:bg-demo md:pr-12 xl:pr-14 2xl:pr-16">
-              <img class="h-40 w-32 shadow-md absolute -inset-y-4
-              sm:h-56 sm:w-44 sm:-inset-y-8
-              md:h-72 md:w-52 md:-inset-y-10
-              lg:h-80 lg:w-60 lg:-inset-y-10
-              xl:h-352 xl:w-64 xl:-inset-y-8
-              2xl:h-96 2xl:w-72 2xl:-inset-y-8"
-              :src="require(`@/assets/images/${product.image}`)" alt="">
+              <transition appear @before-enter="beforeEnterImage" @enter="enterImage">
+                <img class="h-40 w-32 shadow-md absolute -inset-y-4
+                sm:h-56 sm:w-44 sm:-inset-y-8
+                md:h-72 md:w-52 md:-inset-y-10
+                lg:h-80 lg:w-60 lg:-inset-y-10
+                xl:h-352 xl:w-64 xl:-inset-y-8
+                2xl:h-96 2xl:w-72 2xl:-inset-y-8"
+                :src="require(`@/assets/images/${product.image}`)" alt="">
+              </transition>
             </div>
             <div class="col-span-2 ml-2 py-2 pr-5 h-32 flex flex-col justify-between
             sm:py-0 sm:h-40
@@ -25,9 +27,9 @@
             xl:h-72
             2xl:h-80">
               <div>
-                <p class="josefin text-base line-clamp-1 sm:line-clamp-none sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl">{{ product.productName }}</p>
-                <p class="montserrat-medium opacity-30 text-3xs -mt-1 mb-2 sm:-mt-0 sm:mb-4 sm:text-xs md:mb-8 md:text-sm lg:text-lg">{{ product.category }}</p>
-                <p class="roboto-light text-3xs opacity-70 line-clamp-3
+                <p class="josefin cursor-default text-base line-clamp-1 sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl">{{ product.productName }}</p>
+                <p class="montserrat-medium cursor-default opacity-30 text-3xs -mt-1 mb-2 sm:-mt-0 sm:mb-4 sm:text-xs md:mb-8 md:text-sm lg:text-lg">{{ product.category }}</p>
+                <p class="roboto-light cursor-default text-3xs opacity-70 line-clamp-3
                 sm:text-sm
                 lg:text-base lg:line-clamp-4
                 xl:text-lg 2xl:text-xl">
@@ -35,17 +37,18 @@
                 </p>
               </div>
               <div class="flex justify-between items-center">
-                <p class="roboto-light text-2xs text-black sm:text-sm md:text-lg lg:text-xl 2xl:text-2xl">
+                <p class="roboto-light cursor-default text-2xs text-black sm:text-sm md:text-lg lg:text-xl 2xl:text-2xl">
                   {{ product.price }}
                 </p>
                 <div class="flex roboto sm:items-center sm:text-sm">
-                  <p class="hidden text-secondary roboto-light sm:flex sm:mr-2 md:mr-3 lg:mr-5 lg:text-xl 2xl:text-2xl">Trendyol'dan</p>
+                  <p class="hidden cursor-default text-secondary roboto-light sm:flex sm:mr-2 md:mr-3 lg:mr-5 lg:text-xl 2xl:text-2xl">Trendyol'dan</p>
                   <a href="#" target="_blank"
                     class="roboto flex items-center bg-fifth text-white text-center rounded-2xl h-4 w-16
+                    transition duration-500 ease-in-out hover:bg-secondary transform hover:-translate-y-1
                     sm:w-20 sm:h-6
                     md:w-28 md:h-7
                     lg:w-36 lg:h-8
-                    2xl:w-44 2xl:h-9">
+                    2xl:w-44 2xl:h-10">
                     <div class="roboto m-auto text-3xs sm:text-xs md:text-base lg:text-lg 2xl:text-xl">SATIN AL</div>
                   </a>
                 </div>
@@ -73,9 +76,9 @@
             xl:h-72
             2xl:h-80">
               <div>
-                <p class="josefin text-base line-clamp-1 sm:line-clamp-none sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl">{{ product.productName }}</p>
-                <p class="montserrat-medium opacity-30 text-3xs -mt-1 mb-2 sm:-mt-0 sm:mb-4 sm:text-xs md:mb-8 md:text-sm lg:text-lg">{{ product.category }}</p>
-                <p class="roboto-light text-3xs opacity-70 line-clamp-3
+                <p class="josefin cursor-default text-base line-clamp-1 sm:line-clamp-none sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl">{{ product.productName }}</p>
+                <p class="montserrat-medium cursor-default opacity-30 text-3xs -mt-1 mb-2 sm:-mt-0 sm:mb-4 sm:text-xs md:mb-8 md:text-sm lg:text-lg">{{ product.category }}</p>
+                <p class="roboto-light cursor-default text-3xs opacity-70 line-clamp-3
                 sm:text-sm
                 lg:text-base lg:line-clamp-4
                 xl:text-lg 2xl:text-xl">
@@ -83,30 +86,33 @@
                 </p>
               </div>
               <div class="flex justify-between items-center">
-                <p class="roboto-light text-2xs text-black sm:text-sm md:text-lg lg:text-xl 2xl:text-2xl">
+                <p class="roboto-light cursor-default text-2xs text-black sm:text-sm md:text-lg lg:text-xl 2xl:text-2xl">
                   {{ product.price }}
                 </p>
                 <div class="flex roboto sm:items-center sm:text-sm">
-                  <p class="hidden text-secondary roboto-light sm:flex sm:mr-2 md:mr-3 lg:mr-5 lg:text-xl 2xl:text-2xl">Trendyol'dan</p>
+                  <p class="hidden cursor-default text-secondary roboto-light sm:flex sm:mr-2 md:mr-3 lg:mr-5 lg:text-xl 2xl:text-2xl">Trendyol'dan</p>
                   <a href="#" target="_blank"
                     class="roboto flex items-center bg-fifth text-white text-center rounded-2xl h-4 w-16
+                    transition duration-500 ease-in-out hover:bg-secondary transform hover:-translate-y-1
                     sm:w-20 sm:h-6
                     md:w-28 md:h-7
                     lg:w-36 lg:h-8
-                    2xl:w-44 2xl:h-9">
+                    2xl:w-44 2xl:h-10">
                     <div class="roboto m-auto text-3xs sm:text-xs md:text-base lg:text-lg 2xl:text-xl">SATIN AL</div>
                   </a>
                 </div>
               </div>
             </div>
             <div class="col-span-2 flex justify-start pl-3 sm:bg-demo sm:pl-10 md:pl-12 xl:pl-14 2xl:pl-16">
-              <img class="h-40 w-32 shadow-md absolute -inset-y-4
-              sm:h-56 sm:w-44 sm:-inset-y-8
-              md:h-72 md:w-52 md:-inset-y-10
-              lg:h-80 lg:w-60 lg:-inset-y-10
-              xl:h-352 xl:w-64 xl:-inset-y-8
-              2xl:h-96 2xl:w-72 2xl:-inset-y-8"
-              :src="require(`@/assets/images/${product.image}`)" alt="">
+              <transition appear @before-enter="beforeEnterImageRight" @enter="enterImageRight">
+                <img class="h-40 w-32 shadow-md absolute -inset-y-4
+                sm:h-56 sm:w-44 sm:-inset-y-8
+                md:h-72 md:w-52 md:-inset-y-10
+                lg:h-80 lg:w-60 lg:-inset-y-10
+                xl:h-352 xl:w-64 xl:-inset-y-8
+                2xl:h-96 2xl:w-72 2xl:-inset-y-8"
+                :src="require(`@/assets/images/${product.image}`)" alt="">
+              </transition>
             </div>
           </div>
         </div>
@@ -116,7 +122,18 @@
 </template>
 
 <script>
+import Vue from 'vue';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Product from '../data/productDetails';
+
+gsap.registerPlugin(ScrollTrigger);
+
+Vue.mixin({
+  created() {
+    this.gsap = gsap;
+  },
+});
 
 export default {
   name: 'ProductCard',
@@ -124,6 +141,46 @@ export default {
     return {
       Product,
     };
+  },
+  methods: {
+    beforeEnterImage(el) {
+      gsap.set(el, {
+        opacity: 0,
+        translateX: '-200px',
+      });
+    },
+    enterImage(el, done) {
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: 'top center',
+          toggleActions: 'play pause none none',
+        },
+        duration: 2,
+        opacity: 1,
+        x: 0,
+        onComplete: done,
+      });
+    },
+    beforeEnterImageRight(el) {
+      gsap.set(el, {
+        opacity: 0,
+        translateX: '200px',
+      });
+    },
+    enterImageRight(el, done) {
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: 'top center',
+          toggleActions: 'play pause none none',
+        },
+        duration: 2,
+        opacity: 1,
+        x: 0,
+        onComplete: done,
+      });
+    },
   },
 };
 </script>
