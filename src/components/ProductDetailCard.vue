@@ -38,13 +38,16 @@
           </div>
         </div>
         <div class="flex items-center justify-evenly sm:justify-end">
-          <p class="roboto text-secondary sm:mr-2 text-xl sm:text-base md:text-lg lg:mr-4 xl:text-xl xl:mr-5">Trendyol'dan</p>
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <p class="roboto text-secondary sm:mr-2 text-xl sm:text-base md:text-lg lg:mr-4 xl:text-xl xl:mr-5">Trendyol'dan</p>
+          </transition>
           <a href="#" target="_blank"
           class="roboto flex focus:outline-none items-center w-32 h-9 bg-fifth text-white rounded-3xl
+          transition duration-500 ease-in-out hover:bg-secondary transform hover:-translate-y-1
           sm:w-32 sm:h-8
           md:py-0 md:w-40
           lg:w-48 lg:text-lg
-          xl:text-xl xl:w-52 xl:h-11">
+          xl:text-xl xl:w-52 xl:h-12">
             <div class="m-auto">
               SATIN AL
             </div>
@@ -56,6 +59,7 @@
 </template>
 
 <script>
+import gsap from 'gsap';
 import Product from '../data/productDetails';
 
 export default {
@@ -64,6 +68,23 @@ export default {
     return {
       Product,
     };
+  },
+  methods: {
+    beforeEnter(el) {
+      gsap.set(el, {
+        opacity: 0,
+        translateY: '-60px',
+      });
+    },
+    enter(el, done) {
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        ease: 'bounce',
+        onComplete: done,
+      });
+    },
   },
 };
 </script>
