@@ -3,8 +3,8 @@
     <swiper-slide class="bg-center bg-cover bg-demo" v-for="data in carouselData" v-bind:key="data.title">
       <div class="grid grid-cols-5 h-full">
         <div class="col-span-3 m-auto">
-          <p class="inter-medium leading-none px-4 sm:text-2xl sm:px-16 md:text-3xl md:px-20 lg:text-4xl lg:px-24 2xl:px-64 xl:text-5xl">{{ data.title }}</p>
-          <p class="roboto-light px-4 pt-2 xl:pt-8 text-xs sm:px-16 md:text-sm md:px-20 lg:text-base lg:px-24 2xl:px-64 xl:text-base">{{ data.content }}</p>
+          <p class="inter-medium cursor-default leading-none px-4 sm:text-2xl sm:px-16 md:text-3xl md:px-20 lg:text-4xl lg:px-24 2xl:px-64 xl:text-5xl">{{ data.title }}</p>
+          <p class="roboto-light cursor-default px-4 pt-2 xl:pt-8 text-xs sm:px-16 md:text-sm md:px-20 lg:text-base lg:px-24 2xl:px-64 xl:text-base">{{ data.content }}</p>
         </div>
         <div class="col-span-2 m-auto">
           <img class="sm:h-48 md:h-60 lg:h-72 xl:h-96" :src="require(`@/assets/images/${data.image}`)" alt="">
