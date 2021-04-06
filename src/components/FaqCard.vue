@@ -8,7 +8,7 @@
           src="../assets/images/arrow.png" alt="">
         </button>
       </div>
-      <div :class="isOpen ? 'visible' : 'hidden'">
+      <div :class="isOpen ? 'visible' : 'hidden'" class="demo">
         <p class="opacity-70 text-xs pt-4">Lorem ipsum dolar sit amet, consectetur adispiscing
           elit ut aliquam, purus sit
         </p>
@@ -31,5 +31,31 @@ export default {
 <style>
 p {
   font-family: 'Roboto';
+}
+
+.demo {
+  transition: width 600ms ease-out, height 600ms ease-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(211, 205, 205);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EDDCD2;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DDBEA9;
 }
 </style>
