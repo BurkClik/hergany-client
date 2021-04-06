@@ -32,7 +32,7 @@ export default {
   methods: {
     beforeEnter(el) {
       gsap.set(el, {
-        opacity: 0,
+        opacity: 1,
         translateY: '-200px',
       });
     },
@@ -40,8 +40,8 @@ export default {
       gsap.to(el, {
         opacity: 1,
         y: 0,
-        duration: 2,
-        ease: 'bounce',
+        duration: 3,
+        ease: 'elastic',
         onComplete: done,
       });
     },
