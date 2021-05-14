@@ -1,5 +1,5 @@
 <template>
-  <swiper class='swiper mb-8 sm:mb-16 lg:mb-24 md:mb-16 h-64 lg:h-96 xl:h-512' :options='swiperOption'>
+  <swiper class='swiper mb-8 sm:mb-16 lg:mb-24 md:mb-16 h-64 md:h-80 lg:h-96 xl:h-420' :options='swiperOption'>
     <swiper-slide class="bg-center bg-cover bg-demo" v-for="data in carouselData" v-bind:key="data.title">
       <div class="grid grid-cols-5 h-full">
         <div class="col-span-3 m-auto">

@@ -14,7 +14,7 @@
         </button>
       </div>
       <div>
-        <router-link to="/" class="hergany text-secondary text-5xl tracking-widest sm:text-6xl">
+        <router-link to="/" class="hergany text-secondary text-5xl tracking-widest sm:text-5xl">
           Hergany
         </router-link>
       </div>

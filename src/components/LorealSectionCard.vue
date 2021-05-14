@@ -1,7 +1,7 @@
 <template>
   <div @mouseover="mouseover" @mouseleave="mouseleave">
       <a href="#">
-        <div class="relative flex items-end justify-center rounded-3xl shadow-xl overflow-hidden h-64 w-36
+        <div class="relative flex items-end justify-center rounded-3xl shadow-3xl overflow-hidden h-64 w-36
         md:h-80 md:w-44
         lg:h-352 lg:w-52
         xl:h-420 xl:w-60">
