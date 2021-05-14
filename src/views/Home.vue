@@ -1,19 +1,19 @@
 <template>
   <div class="home">
     <Carousel />
-    <ProductCard />
+    <LorealSection />
   </div>
 </template>
 
 <script>
 import Carousel from '@/components/Carousel.vue';
-import ProductCard from '@/components/ProductCard.vue';
+import LorealSection from '@/components/LorealSection.vue';
 
 export default {
   name: 'Home',
   components: {
     Carousel,
-    ProductCard,
+    LorealSection,
   },
 };
 </script>
