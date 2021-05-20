@@ -2,9 +2,9 @@
   <div>
     <div v-for="product in Product" v-bind:key="product.productID">
       <div v-if="product.productID % 2 == 1">
-        <div :id="index" class="py-8 px-6 sm:px-0 sm:mx-12 md:mx-16 lg:mx-20 xl:mx-24 2xl:mx-40">
+        <div :id="index" class="pb-8 lg:pb-16 xl:pb-24 2xl:pb-36 px-6 sm:px-0 sm:mx-12 md:mx-16 lg:mx-20 xl:mx-24 2xl:mx-40">
         <div
-          class="flex flex-col sm:grid sm:grid-cols-4 w-full sm:h-64 md:h-80 lg:h-96 xl:h-420"
+          class="flex flex-col sm:grid sm:grid-cols-4 w-full sm:h-64 md:h-80 lg:h-96 xl:h-420 2xl:h-512"
         >
           <div class="sm:col-span-2">
               <img
@@ -32,9 +32,9 @@
       </div>
     </div>
       <div v-else-if="product.productID % 2 == 0">
-        <div class="py-8 lg:py-16 xl:py-24 2xl:py-36 px-6 sm:px-0 sm:mx-12 md:mx-16 lg:mx-20 xl:mx-24 2xl:mx-40">
+        <div class="pb-8 lg:pb-16 xl:pb-24 2xl:pb-36 px-6 sm:px-0 sm:mx-12 md:mx-16 lg:mx-20 xl:mx-24 2xl:mx-40">
         <div
-          class="flex flex-col sm:grid sm:grid-cols-4 w-full sm:h-64 md:h-80 lg:h-96 xl:h-420"
+          class="flex flex-col sm:grid sm:grid-cols-4 w-full sm:h-64 md:h-80 lg:h-96 xl:h-420 2xl:h-512"
         >
           <div
             class="order-last sm:order-first sm:col-span-2 sm:py-0 sm:h-40 md:h-52 lg:h-60 xl:h-72 2xl:h-80 sm:mr-12"

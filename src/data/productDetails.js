@@ -87,12 +87,4 @@ export default [
     image: 'duvar_susu.jpg',
     category: 'Duvar Dekorasyonu',
   },
-  {
-    productID: 12,
-    productName: 'Çıngıraklı Ayı',
-    price: '74.90₺',
-    productDetail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut integer vitae volutpat placerat venenatis. Faucibus venenatis, ac aliquet sapien senectus donec.',
-    image: 'ayi.jpg',
-    category: 'Çıngıraklar',
-  },
 ];
