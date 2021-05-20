@@ -1,10 +1,10 @@
 <template>
-  <section class="justify-items-end md:mx-12 lg:mx-20 2xl:mx-40 mb-20 items-center
+  <section class="justify-items-end sm:mx-12 md:mx-16 lg:mx-20 xl:mx-24 2xl:mx-40 mb-20 items-center
   md:flex">
       <div class="mx-4 sm:mx-0 md:mr-8 2xl:w-2/5 flex-initial">
         <p class="hergany mb-4 text-4xl tracking-widest text-center md:text-left">Hergany'yi</p>
-        <p class="font-bold mb-4 text-4xl lg:text-5xl text-center md:text-left">Keşfedin</p>
-        <p class="text-center mb-14 text-sm md:text-left">
+        <p class="inter-medium font-bold mb-4 text-4xl lg:text-5xl text-center md:text-left">Keşfedin</p>
+        <p class="montserrat-medium text-center mb-14 text-sm md:text-left">
            L’Oréal’in misyonu tüm dünyadaki kadın ve erkeklere en kaliteli, etkili, güvenli ve en yenilikçi kozmetik ürünlerini sunmaktır. Bize ait son gelişmeler işte burada.
         </p>
       </div>
@@ -75,6 +75,14 @@ export default {
 <style>
 .hergany {
   font-family: 'Dorsa';
+}
+
+.inter-medium {
+  font-family: 'Inter-Medium';
+}
+
+.montserrat-medium {
+  font-family: 'Montserrat-Medium';
 }
 
 #demo {
